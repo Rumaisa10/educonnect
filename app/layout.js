@@ -3,7 +3,7 @@ import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import { Toaster } from "sonner";
 import { cn } from "./../lib/utils";
 import "./globals.css";
-
+export const dynamic = 'force-dynamic';
 const poppins = Poppins({
   subsets: ["latin"],
   // Pick only what you need to keep bundle small
