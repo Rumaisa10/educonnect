@@ -5,7 +5,7 @@ import { getCourseDetailsByInstructor } from "@/queries/courses";
 import { auth } from "@/auth";
 import { getUserByEmail } from "@/queries/users";
 import { redirect } from "next/navigation";
-
+export const dynamic = "force-dynamic";
 const DashboardPage = async () => {
   const session = await auth();
   if (!session?.user) redirect("/login");
